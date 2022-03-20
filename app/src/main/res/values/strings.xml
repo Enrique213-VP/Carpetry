@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mueblecitos</string>
+    <string name="tittleSplash">Renovar</string>
+    <string name="example">Image Zoom</string>
+    <string name="pPersonal">Un pelao con un bóxzzo</string>
+    <string name="pPersonalOne">El mismo pelao con un bóxzzo pero mas grande</string>
+    <string name="textHeader">Bienvenido</string>
+    <string name="king">Rey</string>
+    <string name="sillas">Sillas</string>
+    <string name="Kitchen">Cocinas</string>
+    <string name="door">Puertas</string>
+    <string name="wardrobe">Armarios</string>
+    <string name="dressingtable">tocadores</string>
+    <string name="bed">Camas</string>
+    <string name="closets">Closets</string>
+    <string name="aboutme">Sobre mi</string>
+    <string name="rn">Diseños personalizados creados para adaptarse a su estilo de vida personal y se siguen con un producto terminado a su satisfacción.</string>
+</resources>

@@ -25,9 +25,8 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.layoutChair.setOnClickListener{
-            val intent = Intent(this, construc::class.java)
+
             Toast.makeText(this, "Ingresaste a sillas", Toast.LENGTH_SHORT).show()
-            startActivity(intent)
         }
 
         binding.layoutCloset.setOnClickListener{
@@ -35,6 +34,13 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Ingresaste a closet", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
+
+        binding.layoutAboutMe.setOnClickListener{
+            val intent = Intent(this, construc::class.java)
+            Toast.makeText(this, "Ingresaste a sillas", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }
+
 
     }
 

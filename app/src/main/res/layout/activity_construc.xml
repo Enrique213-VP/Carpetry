@@ -8,23 +8,38 @@
         tools:context=".construc">
 
 
-        <LinearLayout
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/personal"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+        <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="sosood"/>
+    </LinearLayout>
 
-            <ImageButton
-                    android:id="@+id/iBntPersonal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginRight="1dp"
-                    android:src="@drawable/personal"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/pPersonal"/>
-        </LinearLayout>
 
-    <ImageView
+    <!-- This initially-hidden ImageView will hold the expanded/zoomed version of
+        the images above. Without transformations applied, it takes up the entire
+screen. To achieve the "zoom" animation, this view's bounds are animated
+from the bounds of the thumbnail button above, to its final laid-out
+bounds.
+-->
+    <com.ortiz.touchview.TouchImageView
             android:id="@+id/imExpanded_personal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

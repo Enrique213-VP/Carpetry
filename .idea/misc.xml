@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_construc.xml" value="0.33" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_list_furniture.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_splash_screen.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/item_furniture.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Mueblecitos/app/src/main/res/layout/activity_construc.xml" value="0.14447463768115942" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Mueblecitos/app/src/main/res/layout/activity_list_furniture.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Mueblecitos/app/src/main/res/layout/activity_main.xml" value="0.1" />
@@ -11,7 +16,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android API 30 Platform" project-jdk-type="Android SDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

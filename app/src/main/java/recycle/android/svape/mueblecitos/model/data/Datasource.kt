@@ -18,4 +18,17 @@ class Datasource {
         return Furniture
 
     }
+
+
+    fun loadChairs(): MutableList<Furniture>{
+        var chairs: MutableList<Furniture> = mutableListOf()
+
+        chairs.add(Furniture("https://enrique213-vp.github.io/RenoVar/assets/img/gallery/couch/couchTwo.jpg"))
+        chairs.add(Furniture("https://enrique213-vp.github.io/RenoVar/assets/img/gallery/wardrobe/wardRobeThree.jpg"))
+        chairs.add(Furniture("https://enrique213-vp.github.io/RenoVar/assets/img/gallery/chair/ChairOne.jpg"))
+        chairs.add(Furniture("https://enrique213-vp.github.io/RenoVar/assets/img/gallery/Beds/bedtg.jpg"))
+
+        return chairs
+
+    }
 }

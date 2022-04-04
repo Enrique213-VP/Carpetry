@@ -12,6 +12,12 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Mueblecitos">
         <activity
+                android:name=".ImageFullActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".Chairs_List"
+                android:exported="true"/>
+        <activity
                 android:name=".list_furniture"
                 android:exported="true"/>
         <activity android:name=".construc">

@@ -4,13 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import recycle.android.svape.mueblecitos.model.data.Datasource
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import recycle.android.svape.mueblecitos.model.Furniture
 import recycler.android.svape.mueblecitos.adapter.ItemAdapter
 import recycler.android.svape.mueblecitos.databinding.ActivityListFurnitureBinding
 
-class list_furniture : AppCompatActivity() {
+class Closet_List : AppCompatActivity() {
 
 
     private lateinit var binding: ActivityListFurnitureBinding
@@ -24,7 +21,7 @@ class list_furniture : AppCompatActivity() {
     }
 
     private fun setUpRecyclerView() {
-        val dataSet = Datasource().loadFurniture()
+        val dataSet = Datasource().loadCloset()
         val adapter = ItemAdapter(this, dataSet )
         binding.rvImages.layoutManager = GridLayoutManager(this, 2)
         binding.rvImages.adapter = adapter

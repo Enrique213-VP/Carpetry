@@ -5,16 +5,12 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import recycle.android.svape.mueblecitos.model.Furniture
 import recycler.android.svape.mueblecitos.ImageFullActivity
 import recycler.android.svape.mueblecitos.R
-import recycler.android.svape.mueblecitos.construc
 import recycler.android.svape.mueblecitos.databinding.ItemFurnitureBinding
-import recycler.android.svape.mueblecitos.list_furniture
-
 
 
 class ItemAdapter(val context: Context, val dataSet: List<Furniture>): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {

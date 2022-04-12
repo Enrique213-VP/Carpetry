@@ -68,19 +68,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-        <LinearLayout
-                android:id="@+id/layoutChair"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_rectangle_background"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="15dp"
-                app:layout_constraintEnd_toStartOf="@id/layoutKitchen"
-                app:layout_constraintDimensionRatio="M,1:1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                    android:id="@+id/layoutChair"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/white_rectangle_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintEnd_toStartOf="@id/layoutKitchen"
+                    app:layout_constraintDimensionRatio="M,1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -100,9 +100,9 @@
                         android:textSize="20sp"
                         android:textStyle="bold"/>
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
+            <LinearLayout
                     android:id="@+id/layoutKitchen"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -238,7 +238,7 @@
             </LinearLayout>
 
             <LinearLayout
-                    android:id="@+id/layoutBedf"
+                    android:id="@+id/layoutBed"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="22dp"
@@ -270,6 +270,7 @@
                         android:textStyle="bold"/>
 
             </LinearLayout>
+
             <LinearLayout
                     android:id="@+id/layoutCloset"
                     android:layout_width="0dp"
@@ -305,6 +306,74 @@
             </LinearLayout>
 
             <LinearLayout
+                    android:id="@+id/layoutCloset2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/white_rectangle_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintEnd_toStartOf="@id/layoutKitchen"
+                    app:layout_constraintDimensionRatio="M,1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutCloset">
+
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="8dp"
+                        android:src="@drawable/carpentry"
+                        android:scaleType="centerCrop"
+                        android:background="@color/white"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Others"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/Armchair"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/white_rectangle_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintStart_toEndOf="@id/layoutDoor"
+                    app:layout_constraintDimensionRatio="M,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutBed">
+
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="8dp"
+                        android:background="@color/white"
+                        android:src="@drawable/armchair"
+                        android:scaleType="centerCrop"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Armchair"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                     android:id="@+id/layoutAboutMe"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -316,7 +385,7 @@
                     app:layout_constraintStart_toEndOf="@id/layoutDoor"
                     app:layout_constraintDimensionRatio="M,1:1"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutBedf">
+                    app:layout_constraintTop_toBottomOf="@id/Armchair">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -337,6 +406,7 @@
                         android:textStyle="bold"/>
 
             </LinearLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -345,7 +415,7 @@
                     android:padding="20dp"
                     app:layout_constraintEnd_toEndOf="@id/layoutAboutMe"
                     app:layout_constraintStart_toStartOf="@id/layoutChair"
-                    app:layout_constraintTop_toBottomOf="@id/layoutCloset">
+                    app:layout_constraintTop_toBottomOf="@id/layoutCloset2">
 
                 <TextView
                         android:id="@+id/tv_Treding"
@@ -363,26 +433,26 @@
                         app:layout_constraintTop_toTopOf="parent"/>
 
 
-                    <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:contentDescription="@string/app_name"
-                            android:src="@drawable/papel"
-                            android:tint="@color/white"
-                            app:layout_constraintBottom_toBottomOf="@id/tv_Treding"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="@id/tv_Treding"/>
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/papel"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_Treding"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tv_Treding"/>
 
-                    <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:ellipsize="end"
-                            android:maxLines="5"
-                            android:text="@string/rn"
-                            android:textColor="@color/white"
-                            android:textSize="20sp"
-                            app:layout_constraintTop_toBottomOf="@id/tv_Treding"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ellipsize="end"
+                        android:maxLines="5"
+                        android:text="@string/rn"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_Treding"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

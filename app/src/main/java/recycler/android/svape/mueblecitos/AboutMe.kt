@@ -7,7 +7,6 @@ import android.animation.ObjectAnimator
 import android.graphics.Point
 import android.graphics.Rect
 import android.graphics.RectF
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -15,9 +14,8 @@ import android.view.animation.DecelerateInterpolator
 import androidx.fragment.app.FragmentActivity
 import android.widget.ImageView
 import recycler.android.svape.mueblecitos.databinding.ActivityConstrucBinding
-import kotlin.math.log
 
-class construc : FragmentActivity() {
+class AboutMe : FragmentActivity() {
 
     // Hold a reference to the current animator,
     // so that it can be canceled mid-way.

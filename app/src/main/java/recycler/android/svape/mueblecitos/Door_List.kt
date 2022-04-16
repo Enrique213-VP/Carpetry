@@ -7,7 +7,7 @@ import recycle.android.svape.mueblecitos.model.data.Datasource
 import recycler.android.svape.mueblecitos.adapter.ItemAdapter
 import recycler.android.svape.mueblecitos.databinding.ActivityListFurnitureBinding
 
-class Kitchen_List : AppCompatActivity() {
+class Door_List : AppCompatActivity() {
     private lateinit var binding: ActivityListFurnitureBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +19,8 @@ class Kitchen_List : AppCompatActivity() {
     }
 
     private fun setUpRecyclerView() {
-        val dataSet = Datasource().loadKitchen()
-        val adapter = ItemAdapter(this, dataSet)
+        val dataSet = Datasource().loadDoor()
+        val adapter = ItemAdapter(this, dataSet )
         binding.rvImages.layoutManager = GridLayoutManager(this, 2)
         binding.rvImages.adapter = adapter
     }

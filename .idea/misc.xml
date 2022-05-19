@@ -4,14 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/drawable/background_aboutme.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/drawable/background_buttom.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/drawable/background_splah.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/drawable/brending_background.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/drawable/header_background.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/drawable/white_rectangle_background.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_bed_list.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_chairs_list.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_construc.xml" value="0.33" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_image_full.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_kitchen_list.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_list_furniture.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_list_furniture.xml" value="0.21" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_nightstand_list.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/sevar/IntelliJIDEAProjects/Carpetry/app/src/main/res/layout/activity_splash_screen.xml" value="0.17074275362318841" />

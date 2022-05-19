@@ -1,49 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/container"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".AboutMe">
 
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:background="@drawable/brending_background"
+                  android:padding="5dp">
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:orientation="horizontal"
-            android:padding="16dp">
-
-
+        <ImageButton android:layout_width="50dp" android:layout_height="50dp"
+                     android:layout_marginTop="1dp"
+                     android:id="@+id/btn_back"
+                     android:layout_marginLeft="2dp"
+                     android:scaleType="centerCrop"
+                     android:background="@drawable/flecha"/>
         <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:src="@drawable/personal"
+                android:layout_width="156dp"
+                android:layout_height="156dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/famiglia"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingTop="10dp"
+                android:padding="15dp"
+                android:textSize="30dp"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:shadowDy="2"
+                android:shadowDx="2"
+                android:shadowRadius="15"
+                android:layout_gravity="center"
+                android:text="@string/Family_tittle"/>
 
         <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="sosood"/>
+                android:paddingTop="30dp"
+                android:padding="15dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:shadowDy="2"
+                android:shadowDx="2"
+                android:shadowRadius="15"
+                android:layout_gravity="center"
+                android:text="@string/Message_Father"/>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_gravity="center">
+            <ImageButton
+                    android:id="@+id/btn_youtube"
+                    android:layout_width="50dp" android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/youtube"/>
+            <ImageButton
+                    android:id="@+id/btn_linkedin"
+                    android:layout_width="50dp" android:layout_height="50dp"
+                         android:scaleType="centerCrop"
+                         android:background="@drawable/linkedin"
+            android:layout_marginLeft="5dp"/>
+        </LinearLayout>
     </LinearLayout>
 
 
     <!-- This initially-hidden ImageView will hold the expanded/zoomed version of
-        the images above. Without transformations applied, it takes up the entire
+      the images above. Without transformations applied, it takes up the entire
 screen. To achieve the "zoom" animation, this view's bounds are animated
 from the bounds of the thumbnail button above, to its final laid-out
 bounds.
 -->
+
     <com.ortiz.touchview.TouchImageView
             android:id="@+id/imExpanded_personal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="invisible"
             android:contentDescription="@string/pPersonalOne"/>
+
 
 </FrameLayout>

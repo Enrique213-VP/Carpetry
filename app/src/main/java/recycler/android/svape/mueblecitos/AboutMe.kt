@@ -4,15 +4,18 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.graphics.Point
 import android.graphics.Rect
 import android.graphics.RectF
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.animation.DecelerateInterpolator
 import androidx.fragment.app.FragmentActivity
 import android.widget.ImageView
+import android.widget.Toast
 import recycler.android.svape.mueblecitos.databinding.ActivityConstrucBinding
 
 class AboutMe : FragmentActivity() {
@@ -38,12 +41,30 @@ class AboutMe : FragmentActivity() {
         val thumb1View: View = binding.profileImage
         thumb1View.setOnClickListener {
             Log.d("franca", "Ingreso al boton correcto")
-            zoomImageFromThumb(thumb1View, R.drawable.personal)
+            zoomImageFromThumb(thumb1View, R.drawable.famiglia)
         }
 
+        binding.btnYoutube.setOnClickListener{
+            val openUrl = Intent(android.content.Intent.ACTION_VIEW)
+            openUrl.data = Uri.parse("https://www.youtube.com/channel/UCboflaSQt7bDGp9dzw_eSow")
+            startActivity(openUrl)
+        }
+
+        binding.btnLinkedin.setOnClickListener{
+            val openUrl = Intent(android.content.Intent.ACTION_VIEW)
+            openUrl.data = Uri.parse("https://co.linkedin.com/in/svap?original_referer=https%3A%2F%2Fwww.google.com%2F")
+            startActivity(openUrl)
+        }
+
+        binding.btnBack.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            Toast.makeText(this, "Lista de muebles", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+        }
         // Retrieve and cache the system's default "short" animation time.
         shortAnimatorDuration = resources.getInteger(android.R.integer.config_shortAnimTime)
     }
+
 
 
     private fun zoomImageFromThumb(thumb1View: View, imageResId: Int) {

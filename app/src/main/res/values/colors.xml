@@ -10,4 +10,6 @@
     <color name="background">#783838</color>
     <color name="primary_bc">#D8A16C</color>
     <color name="second_fond">#DDDDDD</color>
+    <color name="brown_Dark">#260e04</color>
+    <color name="brown_light">#7b5e57</color>
 </resources>

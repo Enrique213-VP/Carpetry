@@ -1,7 +1,9 @@
 package recycler.android.svape.mueblecitos
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import recycle.android.svape.mueblecitos.model.data.Datasource
 import recycler.android.svape.mueblecitos.adapter.ItemAdapter
@@ -16,8 +18,14 @@ class Chairs_List : AppCompatActivity() {
         setContentView(binding.root)
 
         setUpRecyclerView()
+        buttonBack()
     }
 
+    private fun buttonBack() {
+        binding.buttonBack.setOnClickListener{
+            onBackPressed()
+        }
+    }
     private fun setUpRecyclerView() {
         val dataSet = Datasource().loadChairs()
         val adapter = ItemAdapter(this, dataSet )

@@ -7,10 +7,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Closet_List">
-    
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_images"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="5dp">
+        <ImageButton android:layout_width="50dp" android:layout_height="50dp"
+                     android:layout_marginTop="1dp"
+                     android:id="@+id/buttonBack"
+                     android:layout_marginLeft="2dp"
+                     android:scaleType="centerCrop"
+                     android:background="@drawable/flecha"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_images"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="20dp"
+                android:layout_below="@+id/button_back"/>
+    </LinearLayout>
 </RelativeLayout>

@@ -16,8 +16,15 @@ class Others_List : AppCompatActivity() {
         setContentView(binding.root)
 
         setUpRecyclerView()
+        buttonBack()
     }
 
+
+    private fun buttonBack() {
+        binding.buttonBack.setOnClickListener{
+            onBackPressed()
+        }
+    }
     private fun setUpRecyclerView() {
         val dataSet = Datasource().loadOthers()
         val adapter = ItemAdapter(this, dataSet )

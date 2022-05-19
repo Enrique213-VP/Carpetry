@@ -16,8 +16,14 @@ class Bed_List : AppCompatActivity() {
         setContentView(binding.root)
 
         setUpRecyclerView()
+        buttonBack()
     }
 
+    private fun buttonBack() {
+        binding.buttonBack.setOnClickListener{
+            onBackPressed()
+        }
+    }
     private fun setUpRecyclerView() {
         val dataSet = Datasource().loadBed()
         val adapter = ItemAdapter(this, dataSet )

@@ -18,8 +18,14 @@ class Closet_List : AppCompatActivity() {
         setContentView(binding.root)
 
         setUpRecyclerView()
+        buttonBack()
     }
 
+    private fun buttonBack() {
+        binding.buttonBack.setOnClickListener{
+            onBackPressed()
+        }
+    }
     private fun setUpRecyclerView() {
         val dataSet = Datasource().loadCloset()
         val adapter = ItemAdapter(this, dataSet )

@@ -50,7 +50,8 @@
             android:overScrollMode="never"
             android:scrollbars="none"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutHeader">
+            app:layout_constraintTop_toBottomOf="@id/layoutHeader" tools:layout_editor_absoluteX="-16dp"
+            app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -60,15 +61,16 @@
                     android:id="@+id/layoutChair"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
                     android:background="@drawable/white_rectangle_background"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintEnd_toStartOf="@id/layoutKitchen"
                     app:layout_constraintDimensionRatio="M,1:1"
+                    app:layout_constraintHorizontal_chainStyle="spread"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toStartOf="@+id/layoutKitchen" android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -94,16 +96,14 @@
                     android:id="@+id/layoutKitchen"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
                     android:background="@drawable/white_rectangle_background"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintStart_toEndOf="@id/layoutChair"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -128,15 +128,15 @@
                     android:id="@+id/layoutDoor"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
                     android:background="@drawable/white_rectangle_background"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintEnd_toStartOf="@id/layoutKitchen"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutChair">
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutChair" android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="@+id/layoutChair"
+                    app:layout_constraintEnd_toEndOf="@+id/layoutChair">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -162,16 +162,14 @@
                     android:id="@+id/layoutNightstand"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:layout_marginLeft="8dp"
                     android:background="@drawable/white_rectangle_background"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintStart_toEndOf="@id/layoutDoor"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutKitchen">
+                    app:layout_constraintStart_toStartOf="@+id/layoutKitchen"
+                    app:layout_constraintEnd_toEndOf="@+id/layoutKitchen" android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutKitchen">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -197,15 +195,14 @@
                     android:id="@+id/layoutDressingTable"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
                     android:background="@drawable/white_rectangle_background"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintEnd_toStartOf="@id/layoutKitchen"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutDoor">
+                    app:layout_constraintStart_toStartOf="@+id/layoutDoor"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutDoor" app:layout_constraintHorizontal_bias="0.5"
+                    android:layout_marginTop="24dp" app:layout_constraintEnd_toEndOf="@+id/layoutDoor">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -231,16 +228,17 @@
                     android:id="@+id/layoutBed"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginLeft="8dp"
                     android:background="@drawable/white_rectangle_background"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintStart_toEndOf="@id/layoutDoor"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutNightstand">
+                    app:layout_constraintEnd_toEndOf="@+id/layoutNightstand"
+                    app:layout_constraintTop_toBottomOf="@id/layoutNightstand"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/layoutNightstand">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -271,10 +269,10 @@
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintEnd_toStartOf="@id/layoutKitchen"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutDressingTable">
+                    app:layout_constraintStart_toStartOf="@+id/layoutDressingTable"
+                    app:layout_constraintTop_toBottomOf="@id/layoutDressingTable"
+                    app:layout_constraintEnd_toEndOf="@+id/layoutDressingTable">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -305,10 +303,10 @@
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintEnd_toStartOf="@id/layoutKitchen"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutCloset">
+                    app:layout_constraintStart_toStartOf="@+id/layoutCloset"
+                    app:layout_constraintTop_toBottomOf="@id/layoutCloset"
+                    app:layout_constraintEnd_toEndOf="@+id/layoutCloset">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -335,15 +333,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="22dp"
-                    android:layout_marginLeft="8dp"
                     android:background="@drawable/white_rectangle_background"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintStart_toEndOf="@id/layoutDoor"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutBed">
+                    app:layout_constraintEnd_toEndOf="@+id/layoutBed"
+                    app:layout_constraintTop_toBottomOf="@id/layoutBed"
+                    app:layout_constraintStart_toStartOf="@+id/layoutBed">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -370,15 +367,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="22dp"
-                    android:layout_marginLeft="8dp"
                     android:background="@drawable/white_rectangle_background"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp"
-                    app:layout_constraintStart_toEndOf="@id/layoutDoor"
                     app:layout_constraintDimensionRatio="M,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/Armchair">
+                    app:layout_constraintEnd_toEndOf="@+id/Armchair"
+                    app:layout_constraintTop_toBottomOf="@id/Armchair"
+                    app:layout_constraintStart_toStartOf="@+id/Armchair">
 
                 <ImageView
                         android:layout_width="100dp"
@@ -407,8 +403,9 @@
                     android:background="@drawable/brending_background"
                     android:padding="20dp"
                     app:layout_constraintEnd_toEndOf="@id/layoutAboutMe"
-                    app:layout_constraintStart_toStartOf="@id/layoutChair"
-                    app:layout_constraintTop_toBottomOf="@id/layoutOther">
+                    app:layout_constraintStart_toStartOf="@+id/layoutOther"
+                    app:layout_constraintTop_toBottomOf="@id/layoutOther"
+            >
 
                 <TextView
                         android:id="@+id/tv_Treding"
@@ -452,4 +449,8 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+    <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:id="@+id/barrier2" app:barrierDirection="top"/>
+    <androidx.constraintlayout.widget.Barrier android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:id="@+id/barrier3" app:barrierDirection="top"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

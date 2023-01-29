@@ -1,4 +1,4 @@
-package recycler.android.svape.mueblecitos
+package recycler.android.svape.mueblecitos.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

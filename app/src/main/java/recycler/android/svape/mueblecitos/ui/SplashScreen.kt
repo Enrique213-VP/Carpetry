@@ -1,4 +1,4 @@
-package recycler.android.svape.mueblecitos
+package recycler.android.svape.mueblecitos.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
+import recycler.android.svape.mueblecitos.R
 import recycler.android.svape.mueblecitos.databinding.ActivitySplashScreenBinding
 
 class SplashScreen : AppCompatActivity() {
@@ -29,7 +30,7 @@ class SplashScreen : AppCompatActivity() {
         handler = Handler(Looper.myLooper()!!)
 
         handler.postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)

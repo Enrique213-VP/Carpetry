@@ -11,39 +11,39 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Mueblecitos">
         <activity
-                android:name=".Others_List"
+                android:name=".ui.Others_List"
                 android:exported="true"/>
         <activity
-                android:name=".Dresser_List"
+                android:name=".ui.Dresser_List"
                 android:exported="true"/>
         <activity
-                android:name=".Door_List"
+                android:name=".ui.Door_List"
                 android:exported="true"/>
         <activity
-                android:name=".Armchair_List"
+                android:name=".ui.chairs.Armchair_List"
                 android:exported="true"/>
         <activity
-                android:name=".Bed_List"
+                android:name=".ui.Bed_List"
                 android:exported="true"/>
         <activity
-                android:name=".Nightstand_List"
+                android:name=".ui.Nightstand_List"
                 android:exported="true"/>
         <activity
-                android:name=".Kitchen_List"
+                android:name=".ui.Kitchen_List"
                 android:exported="true"/>
         <activity
-                android:name=".ImageFullActivity"
+                android:name=".ui.ImageFullActivity"
                 android:exported="true"/>
         <activity
-                android:name=".Chairs_List"
+                android:name=".ui.chairs.Chairs_List"
                 android:exported="true"/>
         <activity
-                android:name=".Closet_List"
+                android:name=".ui.Closet_List"
                 android:exported="true"/>
-        <activity android:name=".AboutMe">
+        <activity android:name=".ui.AboutMe">
         </activity>
         <activity
-                android:name=".SplashScreen"
+                android:name=".ui.SplashScreen"
                 android:theme="@style/Theme.Transparent"
             android:exported="true">
             <intent-filter>
@@ -52,7 +52,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
         </activity>
     </application>
 

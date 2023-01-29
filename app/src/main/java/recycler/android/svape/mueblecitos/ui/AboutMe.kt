@@ -1,4 +1,4 @@
-package recycler.android.svape.mueblecitos
+package recycler.android.svape.mueblecitos.ui
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -16,6 +16,7 @@ import android.view.animation.DecelerateInterpolator
 import androidx.fragment.app.FragmentActivity
 import android.widget.ImageView
 import android.widget.Toast
+import recycler.android.svape.mueblecitos.R
 import recycler.android.svape.mueblecitos.databinding.ActivityConstrucBinding
 
 class AboutMe : FragmentActivity() {

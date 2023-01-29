@@ -148,9 +148,12 @@ class Datasource {
     fun loadDresser(): MutableList<Furniture> {
         var dresser: MutableList<Furniture> = mutableListOf()
 
-        dresser.add(Furniture("https://enrique213-vp.github.io/RenoVar/assets/img/gallery/wardrobe/wardRobeThree.jpg"))
-        dresser.add(Furniture("https://enrique213-vp.github.io/RenoVar/assets/img/gallery/couch/couchFour.jpg"))
-        dresser.add(Furniture("https://enrique213-vp.github.io/RenoVar/assets/img/gallery/desk/deskFour.jpg"))
+        dresser.add(Furniture("https://raw.githubusercontent.com/Enrique213-VP/Carpetry/DataSet/Assets/Dressers/1.jpg"))
+        dresser.add(Furniture("https://raw.githubusercontent.com/Enrique213-VP/Carpetry/DataSet/Assets/Dressers/2.jpg"))
+        dresser.add(Furniture("https://raw.githubusercontent.com/Enrique213-VP/Carpetry/DataSet/Assets/Dressers/3.jpg"))
+        dresser.add(Furniture("https://raw.githubusercontent.com/Enrique213-VP/Carpetry/DataSet/Assets/Dressers/4.jpg"))
+        dresser.add(Furniture("https://raw.githubusercontent.com/Enrique213-VP/Carpetry/DataSet/Assets/Dressers/5.jpg"))
+        dresser.add(Furniture("https://raw.githubusercontent.com/Enrique213-VP/Carpetry/DataSet/Assets/Dressers/6.jpeg"))
 
         return dresser
 

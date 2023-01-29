@@ -6,7 +6,7 @@
         android:id="@+id/list_furniture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Closet_List">
+        tools:context=".ui.Closet_List">
 
     <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
                   android:orientation="vertical"

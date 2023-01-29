@@ -17,7 +17,7 @@
 </p>
 
 ## Download
-Go to the [Releases](https://github.com/skydoves/Pokedex/releases) to download the latest APK.
+Go to the [Releases](https://github.com/Enrique213-VP/Carpetry/releases) to download the latest APK.
 
 <img src="/Assets/furg.gif" align="right" width="320"/>
 

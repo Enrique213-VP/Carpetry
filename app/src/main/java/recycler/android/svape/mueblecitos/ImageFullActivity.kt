@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.squareup.picasso.Picasso
-import recycle.android.svape.mueblecitos.model.Furniture
+import recycler.android.svape.mueblecitos.model.Furniture
 import recycler.android.svape.mueblecitos.adapter.ItemAdapter
 import recycler.android.svape.mueblecitos.databinding.ActivityImageFullBinding
 import recycler.android.svape.mueblecitos.databinding.ItemFurnitureBinding

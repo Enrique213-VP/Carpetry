@@ -3,7 +3,7 @@ package recycler.android.svape.mueblecitos
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
-import recycle.android.svape.mueblecitos.model.data.Datasource
+import recycler.android.svape.mueblecitos.model.data.Datasource
 import recycler.android.svape.mueblecitos.adapter.ItemAdapter
 import recycler.android.svape.mueblecitos.databinding.ActivityListFurnitureBinding
 

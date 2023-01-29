@@ -21,7 +21,5 @@
     <string name="Others">Otros</string>
     <string name="nightstand">Mesitas</string>
     <string name="Family_tittle">La Famiglia Vargas</string>
-    <string name="Message_Father">Este mensaje es para el padre, darle las gracias por todo y meterle tanta cañaña a la
-        vida
-    </string>
+    <string name="Message_Father">Este mensaje es para el padre, darle las gracias por todo</string>
 </resources>

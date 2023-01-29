@@ -190,7 +190,7 @@ class AboutMe : FragmentActivity() {
                 interpolator = DecelerateInterpolator()
                 addListener(object : AnimatorListenerAdapter() {
 
-                    override fun onAnimationEnd(animation: Animator?) {
+                    override fun onAnimationEnd(animation: Animator) {
                         thumb1View.alpha = 1f
                         expandedImageView.visibility = View.GONE
                         currentAnimator = null

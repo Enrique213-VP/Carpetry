@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import recycle.android.svape.mueblecitos.model.Furniture
+import recycler.android.svape.mueblecitos.model.Furniture
 import recycler.android.svape.mueblecitos.ImageFullActivity
 import recycler.android.svape.mueblecitos.R
 import recycler.android.svape.mueblecitos.databinding.ItemFurnitureBinding

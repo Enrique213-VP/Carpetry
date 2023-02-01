@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import recycler.android.svape.mueblecitos.databinding.ActivityMainBinding
-import recycler.android.svape.mueblecitos.ui.chairs.Armchair_List
 import recycler.android.svape.mueblecitos.ui.chairs.Chairs_List
 
 class MainActivity : AppCompatActivity() {

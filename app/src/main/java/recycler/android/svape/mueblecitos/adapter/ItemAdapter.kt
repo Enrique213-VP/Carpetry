@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.squareup.picasso.Picasso
 import recycler.android.svape.mueblecitos.model.Furniture
 import recycler.android.svape.mueblecitos.ui.ImageFullActivity
 import recycler.android.svape.mueblecitos.R

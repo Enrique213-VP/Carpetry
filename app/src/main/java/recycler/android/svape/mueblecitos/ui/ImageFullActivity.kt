@@ -1,14 +1,9 @@
 package recycler.android.svape.mueblecitos.ui
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.squareup.picasso.Picasso
-import recycler.android.svape.mueblecitos.model.Furniture
-import recycler.android.svape.mueblecitos.adapter.ItemAdapter
+import com.bumptech.glide.Glide
 import recycler.android.svape.mueblecitos.databinding.ActivityImageFullBinding
-import recycler.android.svape.mueblecitos.databinding.ItemFurnitureBinding
 
 class ImageFullActivity : AppCompatActivity() {
 
@@ -25,7 +20,7 @@ class ImageFullActivity : AppCompatActivity() {
         }
 
         val imagePath = intent.getStringExtra("path")
-        Picasso.get().load(imagePath).into(binding.imageFurnitureBig)
+        Glide.with(this).load(imagePath).into(binding.imageFurnitureBig)
         }
 
 

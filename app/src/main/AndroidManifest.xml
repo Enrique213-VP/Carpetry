@@ -20,7 +20,7 @@
                 android:name=".ui.Door_List"
                 android:exported="true"/>
         <activity
-                android:name=".ui.chairs.Armchair_List"
+                android:name=".ui.Armchair_List"
                 android:exported="true"/>
         <activity
                 android:name=".ui.Bed_List"

@@ -1,4 +1,4 @@
-package recycler.android.svape.mueblecitos.ui.chairs
+package recycler.android.svape.mueblecitos.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

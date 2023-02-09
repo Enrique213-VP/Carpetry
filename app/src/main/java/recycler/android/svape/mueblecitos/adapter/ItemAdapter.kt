@@ -37,7 +37,8 @@ class ItemAdapter(val context: Context, val dataSet: List<Furniture>) :
         }
     }
 
-    class ItemViewHolder(private val view: View, private val context: Context) : RecyclerView.ViewHolder(view) {
+    class ItemViewHolder(private val view: View, private val context: Context) :
+        RecyclerView.ViewHolder(view) {
         fun render(dataSet: Furniture) {
             val binding = ItemFurnitureBinding.bind(view)
             //Picasso.get().load(dataSet.url).into(binding.cardImage)

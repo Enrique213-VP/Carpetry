@@ -1,77 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/container"
-        xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutMe">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.AboutMe">
+        android:background="@drawable/brending_background"
+        android:orientation="vertical"
+        android:padding="5dp">
 
-    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
-                  android:orientation="vertical"
-                  android:background="@drawable/brending_background"
-                  android:padding="5dp">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:contentDescription="@string/Others"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/flecha"
+            android:scaleType="centerCrop" />
 
-        <ImageButton android:layout_width="50dp" android:layout_height="50dp"
-                     android:layout_marginTop="1dp"
-                     android:id="@+id/btn_back"
-                     android:layout_marginLeft="2dp"
-                     android:scaleType="centerCrop"
-                     android:background="@drawable/flecha"/>
-        <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image"
-                android:layout_width="156dp"
-                android:layout_height="156dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/famiglia"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#FF000000"/>
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingTop="10dp"
-                android:padding="15dp"
-                android:textSize="30dp"
-                android:textStyle="italic"
-                android:textColor="@color/white"
-                android:shadowDy="2"
-                android:shadowDx="2"
-                android:shadowRadius="15"
-                android:layout_gravity="center"
-                android:text="@string/Family_tittle"/>
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/famiglia"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
 
         <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingTop="30dp"
-                android:padding="15dp"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:shadowDy="2"
-                android:shadowDx="2"
-                android:shadowRadius="15"
-                android:layout_gravity="center"
-                android:text="@string/Message_Father"/>
+            android:id="@+id/tittleAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:padding="15dp"
+            android:paddingTop="10dp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="15"
+            android:text="@string/Family_tittle"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="italic" />
 
-        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:orientation="horizontal"
-                      android:layout_gravity="center">
+        <TextView
+            android:id="@+id/descriptionF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:padding="15dp"
+            android:paddingTop="30dp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="15"
+            android:text="@string/Message_Father"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
             <ImageButton
-                    android:id="@+id/btn_youtube"
-                    android:layout_width="50dp" android:layout_height="50dp"
-            android:scaleType="centerCrop"
-            android:background="@drawable/youtube"/>
+                android:id="@+id/btn_youtube"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/Others"
+                android:background="@drawable/youtube"
+                android:scaleType="centerCrop" />
+
             <ImageButton
-                    android:id="@+id/btn_linkedin"
-                    android:layout_width="50dp" android:layout_height="50dp"
-                         android:scaleType="centerCrop"
-                         android:background="@drawable/linkedin"
-            android:layout_marginLeft="5dp"/>
+                android:id="@+id/btn_linkedin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/Others"
+                android:background="@drawable/linkedin"
+                android:scaleType="centerCrop" />
         </LinearLayout>
     </LinearLayout>
 
@@ -84,11 +100,11 @@ bounds.
 -->
 
     <com.ortiz.touchview.TouchImageView
-            android:id="@+id/imExpanded_personal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="invisible"
-            android:contentDescription="@string/pPersonalOne"/>
+        android:id="@+id/imExpanded_personal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/pPersonalOne"
+        android:visibility="invisible" />
 
 
 </FrameLayout>

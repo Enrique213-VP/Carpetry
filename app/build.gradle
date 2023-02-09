@@ -52,9 +52,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation"org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9"
     implementation "androidx.recyclerview:recyclerview:1.2.1"
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //logCat
     implementation 'com.orhanobut:logger:2.2.0'
@@ -68,4 +65,24 @@ dependencies {
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    //Testing-only dependencies
+    androidTestImplementation"org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    androidTestImplementation'androidx.test:core:' + rootProject.coreVersion
+    androidTestImplementation 'androidx.test:core-ktx:' + rootProject.coreVersion
+    androidTestImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion
+    androidTestImplementation 'androidx.test.ext:junit-ktx:' + rootProject.extJUnitVersion
+    androidTestImplementation 'androidx.test:runner:' + rootProject.runnerVersion
+    androidTestImplementation 'androidx.test:rules:' + rootProject.ruleVersion
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:' + rootProject.intentsVersion
+    androidTestImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:' + rootProject.espressoVersion
+
+    testImplementation 'androidx.test:core:' + rootProject.coreVersion
+    testImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.robolectric:robolectric:' + rootProject.robolectricVersion
+    testImplementation 'androidx.test.espresso:espresso-intents:' + rootProject.espressoVersion
+    testImplementation 'androidx.test.ext:truth:' + rootProject.extTruthVersion
+
 }

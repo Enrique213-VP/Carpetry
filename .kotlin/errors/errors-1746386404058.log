@@ -1,0 +1,459 @@
+kotlin version: 2.0.21
+error message: org.jetbrains.kotlin.backend.common.BackendException: Backend Internal error: Exception during IR lowering
+File being compiled: C:/Users/HP/AndroidStudioProjects/Carpetry2/app/src/main/java/com/svape/carpetry/renovar/ui/AboutMe.kt
+The root cause java.lang.RuntimeException was thrown at: org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	at org.jetbrains.kotlin.backend.common.CodegenUtil.reportBackendException(CodegenUtil.kt:253)
+	at org.jetbrains.kotlin.backend.common.CodegenUtil.reportBackendException$default(CodegenUtil.kt:236)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invokeSequential(performByIrFile.kt:65)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invoke(performByIrFile.kt:52)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invoke(performByIrFile.kt:38)
+	at org.jetbrains.kotlin.backend.common.phaser.NamedCompilerPhase.phaseBody(CompilerPhase.kt:166)
+	at org.jetbrains.kotlin.backend.common.phaser.AbstractNamedCompilerPhase.invoke(CompilerPhase.kt:113)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:27)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:14)
+	at org.jetbrains.kotlin.backend.common.phaser.NamedCompilerPhase.phaseBody(CompilerPhase.kt:166)
+	at org.jetbrains.kotlin.backend.common.phaser.AbstractNamedCompilerPhase.invoke(CompilerPhase.kt:113)
+	at org.jetbrains.kotlin.backend.common.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:62)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:371)
+	at org.jetbrains.kotlin.codegen.CodegenFactory.generateModule(CodegenFactory.kt:47)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateModuleInFrontendIRMode(JvmIrCodegenFactory.kt:433)
+	at org.jetbrains.kotlin.cli.jvm.compiler.pipeline.JvmCompilerPipelineKt.generateCodeFromIr(jvmCompilerPipeline.kt:246)
+	at org.jetbrains.kotlin.cli.jvm.compiler.pipeline.JvmCompilerPipelineKt.compileModulesUsingFrontendIrAndLightTree(jvmCompilerPipeline.kt:142)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:148)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:43)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:103)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:49)
+	at org.jetbrains.kotlin.cli.common.CLITool.exec(CLITool.kt:101)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:464)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunner.runCompiler(IncrementalJvmCompilerRunner.kt:73)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:506)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:423)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:301)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:129)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:675)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:92)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1660)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN name:zoomImageFromThumb visibility:private modality:FINAL <> ($this:com.svape.carpetry.renovar.ui.AboutMe, thumb1View:android.view.View, imageResId:kotlin.Int) returnType:kotlin.Unit
+  $this: VALUE_PARAMETER name:<this> type:com.svape.carpetry.renovar.ui.AboutMe
+  VALUE_PARAMETER name:thumb1View index:0 type:android.view.View
+  VALUE_PARAMETER name:imageResId index:1 type:kotlin.Int
+  BLOCK_BODY
+    COMPOSITE type=kotlin.Unit origin=null
+      BLOCK type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+        WHEN type=kotlin.Unit? origin=FOLDED_SAFE_CALL
+          BRANCH
+            if: COMPOSITE type=kotlin.Boolean origin=null
+              VAR IR_TEMPORARY_VARIABLE name:tmp0_safe_receiver type:android.animation.Animator? [val]
+                GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:currentAnimator type:android.animation.Animator? visibility:private' type=android.animation.Animator? origin=null
+                  receiver: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+              CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                $this: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                  arg0: GET_VAR 'val tmp0_safe_receiver: android.animation.Animator? [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.animation.Animator? origin=null
+                  arg1: CONST Null type=kotlin.Nothing? value=null
+            then: CALL 'public open fun cancel (): kotlin.Unit declared in android.animation.Animator' type=kotlin.Unit origin=null
+              $this: GET_VAR 'val tmp0_safe_receiver: android.animation.Animator? [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.animation.Animator? origin=null
+          BRANCH
+            if: CONST Boolean type=kotlin.Boolean value=true
+            then: CONST Null type=kotlin.Nothing? value=null
+    VAR name:expandedImageView type:android.widget.ImageView [val]
+      BLOCK type=android.widget.ImageView origin=null
+        VAR IR_TEMPORARY_VARIABLE name:tmp0 type:kotlin.Any? [val]
+          CALL 'public open fun findViewById <T> (p0: kotlin.Int): @[FlexibleNullability] T of com.svape.carpetry.renovar.ui.AboutMe.findViewById? [fake_override] declared in com.svape.carpetry.renovar.ui.AboutMe' type=@[FlexibleNullability] android.widget.ImageView? origin=null
+            <T>: @[FlexibleNullability] android.widget.ImageView?
+            $this: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+            p0: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:imExpanded_personal type:kotlin.Int visibility:public [static] declared in com.svape.carpetry.renovar.R.id' type=kotlin.Int superQualifierSymbol=com.svape.carpetry.renovar.R.id origin=null
+        CALL 'public final fun checkNotNullExpressionValue (value: kotlin.Any?, expression: kotlin.String): kotlin.Unit declared in kotlin.jvm.internal.Intrinsics' type=kotlin.Unit origin=null
+          value: GET_VAR 'val tmp0: kotlin.Any? [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Any? origin=null
+          expression: CONST String type=kotlin.String value="findViewById(...)"
+        GET_VAR 'val tmp0: kotlin.Any? [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Any? origin=null
+    CALL 'public open fun setImageResource (p0: kotlin.Int): kotlin.Unit declared in android.widget.ImageView' type=kotlin.Unit origin=null
+      $this: GET_VAR 'val expandedImageView: android.widget.ImageView [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.widget.ImageView origin=null
+      p0: GET_VAR 'imageResId: kotlin.Int declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Int origin=null
+    VAR name:startBoundsInt type:android.graphics.Rect [val]
+      CONSTRUCTOR_CALL 'public constructor <init> () declared in android.graphics.Rect' type=android.graphics.Rect origin=null
+    VAR name:finalBoundsInt type:android.graphics.Rect [val]
+      CONSTRUCTOR_CALL 'public constructor <init> () declared in android.graphics.Rect' type=android.graphics.Rect origin=null
+    VAR name:globalOffset type:android.graphics.Point [val]
+      CONSTRUCTOR_CALL 'public constructor <init> () declared in android.graphics.Point' type=android.graphics.Point origin=null
+    COMPOSITE type=kotlin.Unit origin=null
+      CALL 'public final fun getGlobalVisibleRect (p0: @[FlexibleNullability] android.graphics.Rect?): kotlin.Boolean declared in android.view.View' type=kotlin.Boolean origin=null
+        $this: GET_VAR 'thumb1View: android.view.View declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.view.View origin=null
+        p0: GET_VAR 'val startBoundsInt: android.graphics.Rect [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Rect origin=null
+      COMPOSITE type=kotlin.Unit origin=null
+    COMPOSITE type=kotlin.Unit origin=null
+      CALL 'public open fun getGlobalVisibleRect (p0: @[FlexibleNullability] android.graphics.Rect?, p1: @[FlexibleNullability] android.graphics.Point?): kotlin.Boolean declared in android.view.View' type=kotlin.Boolean origin=null
+        $this: CALL 'public open fun findViewById <T> (p0: kotlin.Int): @[FlexibleNullability] T of com.svape.carpetry.renovar.ui.AboutMe.findViewById? [fake_override] declared in com.svape.carpetry.renovar.ui.AboutMe' type=@[FlexibleNullability] android.view.View? origin=null
+          <T>: @[FlexibleNullability] android.view.View?
+          $this: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+          p0: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:container type:kotlin.Int visibility:public [static] declared in com.svape.carpetry.renovar.R.id' type=kotlin.Int superQualifierSymbol=com.svape.carpetry.renovar.R.id origin=null
+        p0: GET_VAR 'val finalBoundsInt: android.graphics.Rect [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Rect origin=null
+        p1: GET_VAR 'val globalOffset: android.graphics.Point [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Point origin=null
+      COMPOSITE type=kotlin.Unit origin=null
+    CALL 'public open fun offset (p0: kotlin.Int, p1: kotlin.Int): kotlin.Unit declared in android.graphics.Rect' type=kotlin.Unit origin=null
+      $this: GET_VAR 'val startBoundsInt: android.graphics.Rect [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Rect origin=null
+      p0: CALL 'public final fun unaryMinus (): kotlin.Int [operator] declared in kotlin.Int' type=kotlin.Int origin=null
+        $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:x type:kotlin.Int visibility:public declared in android.graphics.Point' type=kotlin.Int superQualifierSymbol=android.graphics.Point origin=null
+          receiver: GET_VAR 'val globalOffset: android.graphics.Point [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Point origin=null
+      p1: CALL 'public final fun unaryMinus (): kotlin.Int [operator] declared in kotlin.Int' type=kotlin.Int origin=null
+        $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:y type:kotlin.Int visibility:public declared in android.graphics.Point' type=kotlin.Int superQualifierSymbol=android.graphics.Point origin=null
+          receiver: GET_VAR 'val globalOffset: android.graphics.Point [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Point origin=null
+    CALL 'public open fun offset (p0: kotlin.Int, p1: kotlin.Int): kotlin.Unit declared in android.graphics.Rect' type=kotlin.Unit origin=null
+      $this: GET_VAR 'val finalBoundsInt: android.graphics.Rect [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Rect origin=null
+      p0: CALL 'public final fun unaryMinus (): kotlin.Int [operator] declared in kotlin.Int' type=kotlin.Int origin=null
+        $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:x type:kotlin.Int visibility:public declared in android.graphics.Point' type=kotlin.Int superQualifierSymbol=android.graphics.Point origin=null
+          receiver: GET_VAR 'val globalOffset: android.graphics.Point [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Point origin=null
+      p1: CALL 'public final fun unaryMinus (): kotlin.Int [operator] declared in kotlin.Int' type=kotlin.Int origin=null
+        $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:y type:kotlin.Int visibility:public declared in android.graphics.Point' type=kotlin.Int superQualifierSymbol=android.graphics.Point origin=null
+          receiver: GET_VAR 'val globalOffset: android.graphics.Point [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Point origin=null
+    VAR name:startBounds type:android.graphics.RectF [val]
+      CONSTRUCTOR_CALL 'public constructor <init> (p0: @[EnhancedNullability] android.graphics.Rect?) declared in android.graphics.RectF' type=android.graphics.RectF origin=null
+        p0: GET_VAR 'val startBoundsInt: android.graphics.Rect [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Rect origin=null
+    VAR name:finalBounds type:android.graphics.RectF [val]
+      CONSTRUCTOR_CALL 'public constructor <init> (p0: @[EnhancedNullability] android.graphics.Rect?) declared in android.graphics.RectF' type=android.graphics.RectF origin=null
+        p0: GET_VAR 'val finalBoundsInt: android.graphics.Rect [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.Rect origin=null
+    VAR name:startScale type:kotlin.Float [val]
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public final fun greater (arg0: kotlin.Float, arg1: kotlin.Float): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=GT
+          arg0: CALL 'public final fun div (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=DIV
+            $this: CALL 'public final fun width (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+              $this: GET_VAR 'val finalBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+            other: CALL 'public final fun height (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+              $this: GET_VAR 'val finalBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+          arg1: CALL 'public final fun div (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=DIV
+            $this: CALL 'public final fun width (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+              $this: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+            other: CALL 'public final fun height (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+              $this: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+        then: BLOCK type=kotlin.Unit origin=null
+          SET_VAR 'val startScale: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Unit origin=EQ
+            CALL 'public final fun div (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=DIV
+              $this: CALL 'public final fun height (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+                $this: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+              other: CALL 'public final fun height (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+                $this: GET_VAR 'val finalBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+          VAR name:startWidth type:kotlin.Float [val]
+            CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MUL
+              $this: GET_VAR 'val startScale: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+              other: CALL 'public final fun width (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+                $this: GET_VAR 'val finalBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+          VAR name:deltaWidth type:kotlin.Float [val]
+            CALL 'public final fun div (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=DIV
+              $this: CALL 'public final fun minus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MINUS
+                $this: GET_VAR 'val startWidth: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+                other: CALL 'public final fun width (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+                  $this: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+              other: CONST Int type=kotlin.Int value=2
+          BLOCK type=kotlin.Unit origin=MINUSEQ
+            SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:left type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Unit superQualifierSymbol=android.graphics.RectF origin=MINUSEQ
+              receiver: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+              value: CALL 'public final fun minus (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MINUSEQ
+                $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:left type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Float superQualifierSymbol=android.graphics.RectF origin=MINUSEQ
+                  receiver: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+                other: CALL 'public open fun toInt (): kotlin.Int declared in kotlin.Float' type=kotlin.Int origin=null
+                  $this: GET_VAR 'val deltaWidth: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+          BLOCK type=kotlin.Unit origin=PLUSEQ
+            SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:bottom type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Unit superQualifierSymbol=android.graphics.RectF origin=PLUSEQ
+              receiver: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+              value: CALL 'public final fun plus (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=PLUSEQ
+                $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:bottom type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Float superQualifierSymbol=android.graphics.RectF origin=PLUSEQ
+                  receiver: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+                other: CALL 'public open fun toInt (): kotlin.Int declared in kotlin.Float' type=kotlin.Int origin=null
+                  $this: GET_VAR 'val deltaWidth: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+      BRANCH
+        if: CONST Boolean type=kotlin.Boolean value=true
+        then: BLOCK type=kotlin.Unit origin=null
+          SET_VAR 'val startScale: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Unit origin=EQ
+            CALL 'public final fun div (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=DIV
+              $this: CALL 'public final fun width (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+                $this: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+              other: CALL 'public final fun width (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+                $this: GET_VAR 'val finalBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+          VAR name:startHeight type:kotlin.Float [val]
+            CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MUL
+              $this: GET_VAR 'val startScale: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+              other: CALL 'public final fun height (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+                $this: GET_VAR 'val finalBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+          VAR name:deltaHeight type:kotlin.Float [val]
+            CALL 'public final fun div (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=DIV
+              $this: CALL 'public final fun minus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MINUS
+                $this: GET_VAR 'val startHeight: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+                other: CALL 'public final fun height (): kotlin.Float declared in android.graphics.RectF' type=kotlin.Float origin=null
+                  $this: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+              other: CONST Float type=kotlin.Float value=2.0
+          BLOCK type=kotlin.Unit origin=MINUSEQ
+            SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:top type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Unit superQualifierSymbol=android.graphics.RectF origin=MINUSEQ
+              receiver: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+              value: CALL 'public final fun minus (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MINUSEQ
+                $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:top type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Float superQualifierSymbol=android.graphics.RectF origin=MINUSEQ
+                  receiver: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+                other: CALL 'public open fun toInt (): kotlin.Int declared in kotlin.Float' type=kotlin.Int origin=null
+                  $this: GET_VAR 'val deltaHeight: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+          BLOCK type=kotlin.Unit origin=PLUSEQ
+            SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:bottom type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Unit superQualifierSymbol=android.graphics.RectF origin=PLUSEQ
+              receiver: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+              value: CALL 'public final fun plus (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=PLUSEQ
+                $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:bottom type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Float superQualifierSymbol=android.graphics.RectF origin=PLUSEQ
+                  receiver: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+                other: CALL 'public open fun toInt (): kotlin.Int declared in kotlin.Float' type=kotlin.Int origin=null
+                  $this: GET_VAR 'val deltaHeight: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+    CALL 'public open fun setAlpha (p0: kotlin.Float): kotlin.Unit declared in android.view.View' type=kotlin.Unit origin=EQ
+      $this: GET_VAR 'thumb1View: android.view.View declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.view.View origin=null
+      p0: CONST Float type=kotlin.Float value=0.0
+    CALL 'public open fun setVisibility (p0: kotlin.Int): kotlin.Unit declared in android.widget.ImageView' type=kotlin.Unit origin=EQ
+      $this: GET_VAR 'val expandedImageView: android.widget.ImageView [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.widget.ImageView origin=null
+      p0: CONST Int type=kotlin.Int value=0
+    CALL 'public open fun setPivotX (p0: kotlin.Float): kotlin.Unit [fake_override] declared in android.widget.ImageView' type=kotlin.Unit origin=EQ
+      $this: GET_VAR 'val expandedImageView: android.widget.ImageView [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.widget.ImageView origin=null
+      p0: CONST Float type=kotlin.Float value=0.0
+    CALL 'public open fun setPivotY (p0: kotlin.Float): kotlin.Unit [fake_override] declared in android.widget.ImageView' type=kotlin.Unit origin=EQ
+      $this: GET_VAR 'val expandedImageView: android.widget.ImageView [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.widget.ImageView origin=null
+      p0: CONST Float type=kotlin.Float value=0.0
+    SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:currentAnimator type:android.animation.Animator? visibility:private' type=kotlin.Unit origin=null
+      receiver: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+      value: CALL 'public final fun apply <T> (block: @[ExtensionFunctionType] kotlin.Function1<T of kotlin.StandardKt.apply, kotlin.Unit>): T of kotlin.StandardKt.apply [inline] declared in kotlin.StandardKt' type=android.animation.AnimatorSet origin=null
+        <T>: android.animation.AnimatorSet
+        $receiver: CONSTRUCTOR_CALL 'public constructor <init> () declared in android.animation.AnimatorSet' type=android.animation.AnimatorSet origin=null
+        block: BLOCK type=@[ExtensionFunctionType] kotlin.Function1<android.animation.AnimatorSet, kotlin.Unit> origin=LAMBDA
+          COMPOSITE type=kotlin.Unit origin=null
+          FUNCTION_REFERENCE 'private final fun zoomImageFromThumb$lambda$5 ($expandedImageView: android.widget.ImageView, $startBounds: android.graphics.RectF, $finalBounds: android.graphics.RectF, this$0: com.svape.carpetry.renovar.ui.AboutMe, $startScale: kotlin.Float): kotlin.Unit declared in com.svape.carpetry.renovar.ui.AboutMe' type=@[ExtensionFunctionType] kotlin.Function1<android.animation.AnimatorSet, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+            $expandedImageView: GET_VAR 'val expandedImageView: android.widget.ImageView [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.widget.ImageView origin=null
+            $startBounds: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+            $finalBounds: GET_VAR 'val finalBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+            this$0: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+            $startScale: GET_VAR 'val startScale: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+    CALL 'public open fun setOnClickListener (p0: @[EnhancedNullability] android.view.View.OnClickListener?): kotlin.Unit [fake_override] declared in android.widget.ImageView' type=kotlin.Unit origin=null
+      $this: GET_VAR 'val expandedImageView: android.widget.ImageView [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.widget.ImageView origin=null
+      p0: BLOCK type=android.view.View.OnClickListener origin=LAMBDA
+        COMPOSITE type=kotlin.Unit origin=null
+        CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=android.view.View.OnClickListener origin=null
+          <T>: android.view.View.OnClickListener
+          dynamicCall: CALL 'public final fun onClick (p0: com.svape.carpetry.renovar.ui.AboutMe, p1: android.widget.ImageView, p2: android.graphics.RectF, p3: kotlin.Float, p4: android.view.View): android.view.View.OnClickListener declared in kotlin.jvm.internal.invokeDynamic' type=android.view.View.OnClickListener origin=null
+            p0: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+            p1: GET_VAR 'val expandedImageView: android.widget.ImageView [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.widget.ImageView origin=null
+            p2: GET_VAR 'val startBounds: android.graphics.RectF [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.graphics.RectF origin=null
+            p3: GET_VAR 'val startScale: kotlin.Float [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=kotlin.Float origin=null
+            p4: GET_VAR 'thumb1View: android.view.View declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb' type=android.view.View origin=null
+          bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+            tag: CONST Int type=kotlin.Int value=6
+            owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+            name: CONST String type=kotlin.String value="metafactory"
+            descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+            isInterface: CONST Boolean type=kotlin.Boolean value=false
+          bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+            CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              method: RAW_FUNCTION_REFERENCE 'public abstract fun onClick (p0: @[FlexibleNullability] android.view.View?): kotlin.Unit declared in android.view.View.OnClickListener' type=kotlin.Any
+            RAW_FUNCTION_REFERENCE 'private final fun zoomImageFromThumb$lambda$8 (this$0: com.svape.carpetry.renovar.ui.AboutMe, $expandedImageView: android.widget.ImageView, $startBounds: android.graphics.RectF, $startScale: kotlin.Float, $thumb1View: android.view.View, it: @[FlexibleNullability] android.view.View?): kotlin.Unit declared in com.svape.carpetry.renovar.ui.AboutMe' type=kotlin.Any
+            CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              method: RAW_FUNCTION_REFERENCE 'public abstract fun onClick (p0: @[FlexibleNullability] android.view.View?): kotlin.Unit [fake_override] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:40)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:406)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:423)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:168)
+	at org.jetbrains.kotlin.backend.jvm.FileCodegen.lower(JvmPhases.kt:39)
+	at org.jetbrains.kotlin.backend.common.phaser.PhaseFactoriesKt.createFilePhase$lambda$4(PhaseFactories.kt:71)
+	at org.jetbrains.kotlin.backend.common.phaser.PhaseBuildersKt$createSimpleNamedCompilerPhase$1.phaseBody(PhaseBuilders.kt:69)
+	at org.jetbrains.kotlin.backend.common.phaser.SimpleNamedCompilerPhase.phaseBody(CompilerPhase.kt:226)
+	at org.jetbrains.kotlin.backend.common.phaser.AbstractNamedCompilerPhase.invoke(CompilerPhase.kt:113)
+	at org.jetbrains.kotlin.backend.common.phaser.PerformByIrFilePhase.invokeSequential(performByIrFile.kt:62)
+	... 43 more
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN INLINE_LAMBDA name:zoomImageFromThumb$lambda$5 visibility:private modality:FINAL <> ($receiver:android.animation.AnimatorSet, $expandedImageView:android.widget.ImageView, $startBounds:android.graphics.RectF, $finalBounds:android.graphics.RectF, this$0:com.svape.carpetry.renovar.ui.AboutMe, $startScale:kotlin.Float) returnType:kotlin.Unit
+  $receiver: VALUE_PARAMETER name:$this$apply type:android.animation.AnimatorSet
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER name:$expandedImageView index:0 type:android.widget.ImageView
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER name:$startBounds index:1 type:android.graphics.RectF
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER name:$finalBounds index:2 type:android.graphics.RectF
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER name:this$0 index:3 type:com.svape.carpetry.renovar.ui.AboutMe
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER name:$startScale index:4 type:kotlin.Float
+  BLOCK_BODY
+    VAR name:$i$a$-apply-AboutMe$zoomImageFromThumb$1 type:kotlin.Int [val]
+      CONST Int type=kotlin.Int value=0
+    COMPOSITE type=kotlin.Unit origin=null
+      CALL 'public final fun apply <T> (block: @[ExtensionFunctionType] kotlin.Function1<T of kotlin.StandardKt.apply, kotlin.Unit>): T of kotlin.StandardKt.apply [inline] declared in kotlin.StandardKt' type=@[FlexibleNullability] android.animation.AnimatorSet.Builder? origin=null
+        <T>: @[FlexibleNullability] android.animation.AnimatorSet.Builder?
+        $receiver: CALL 'public open fun play (p0: @[FlexibleNullability] android.animation.Animator?): @[FlexibleNullability] android.animation.AnimatorSet.Builder? declared in android.animation.AnimatorSet' type=@[FlexibleNullability] android.animation.AnimatorSet.Builder? origin=null
+          $this: GET_VAR '$this$apply: android.animation.AnimatorSet declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.animation.AnimatorSet origin=null
+          p0: CALL 'public open fun ofFloat <T> (p0: @[FlexibleNullability] T of android.animation.ObjectAnimator.ofFloat?, p1: @[FlexibleNullability] android.util.Property<@[FlexibleNullability] T of android.animation.ObjectAnimator.ofFloat?, @[FlexibleNullability] kotlin.Float?>?, vararg p2: kotlin.Float): @[FlexibleNullability] android.animation.ObjectAnimator? declared in android.animation.ObjectAnimator' type=@[FlexibleNullability] android.animation.ObjectAnimator? origin=null
+            <T>: @[FlexibleNullability] android.view.View?
+            p0: GET_VAR '$expandedImageView: android.widget.ImageView declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.widget.ImageView origin=null
+            p1: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:X type:@[FlexibleNullability] android.util.Property<@[FlexibleNullability] android.view.View?, @[FlexibleNullability] kotlin.Float?>? visibility:public [final,static] declared in android.view.View' type=@[FlexibleNullability] android.util.Property<@[FlexibleNullability] android.view.View?, @[FlexibleNullability] kotlin.Float?>? superQualifierSymbol=android.view.View origin=null
+            p2: BLOCK type=@[FlexibleNullability] kotlin.FloatArray? origin=null
+              VAR IR_TEMPORARY_VARIABLE name:tmp0 type:@[FlexibleNullability] kotlin.FloatArray? [val]
+                CONSTRUCTOR_CALL 'public constructor <init> (size: kotlin.Int) [primary] declared in kotlin.FloatArray' type=@[FlexibleNullability] kotlin.FloatArray? origin=null
+                  size: CONST Int type=kotlin.Int value=2
+              CALL 'public final fun set (index: kotlin.Int, value: kotlin.Float): kotlin.Unit [operator] declared in kotlin.FloatArray' type=kotlin.Unit origin=null
+                $this: GET_VAR 'val tmp0: @[FlexibleNullability] kotlin.FloatArray? [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=@[FlexibleNullability] kotlin.FloatArray? origin=null
+                index: CONST Int type=kotlin.Int value=0
+                value: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:left type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Float superQualifierSymbol=android.graphics.RectF origin=null
+                  receiver: GET_VAR '$startBounds: android.graphics.RectF declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.graphics.RectF origin=null
+              CALL 'public final fun set (index: kotlin.Int, value: kotlin.Float): kotlin.Unit [operator] declared in kotlin.FloatArray' type=kotlin.Unit origin=null
+                $this: GET_VAR 'val tmp0: @[FlexibleNullability] kotlin.FloatArray? [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=@[FlexibleNullability] kotlin.FloatArray? origin=null
+                index: CONST Int type=kotlin.Int value=1
+                value: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:left type:kotlin.Float visibility:public declared in android.graphics.RectF' type=kotlin.Float superQualifierSymbol=android.graphics.RectF origin=null
+                  receiver: GET_VAR '$finalBounds: android.graphics.RectF declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.graphics.RectF origin=null
+              GET_VAR 'val tmp0: @[FlexibleNullability] kotlin.FloatArray? [val] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=@[FlexibleNullability] kotlin.FloatArray? origin=null
+        block: BLOCK type=@[ExtensionFunctionType] kotlin.Function1<@[FlexibleNullability] android.animation.AnimatorSet.Builder?, kotlin.Unit> origin=LAMBDA
+          COMPOSITE type=kotlin.Unit origin=null
+          FUNCTION_REFERENCE 'private final fun zoomImageFromThumb$lambda$5$lambda$4 ($expandedImageView: android.widget.ImageView, $startBounds: android.graphics.RectF, $finalBounds: android.graphics.RectF, $startScale: kotlin.Float): kotlin.Unit declared in com.svape.carpetry.renovar.ui.AboutMe' type=@[ExtensionFunctionType] kotlin.Function1<@[FlexibleNullability] android.animation.AnimatorSet.Builder?, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+            $expandedImageView: GET_VAR '$expandedImageView: android.widget.ImageView declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.widget.ImageView origin=null
+            $startBounds: GET_VAR '$startBounds: android.graphics.RectF declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.graphics.RectF origin=null
+            $finalBounds: GET_VAR '$finalBounds: android.graphics.RectF declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.graphics.RectF origin=null
+            $startScale: GET_VAR '$startScale: kotlin.Float declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=kotlin.Float origin=null
+      COMPOSITE type=kotlin.Unit origin=null
+    SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:DURATION_INFINITE type:kotlin.Long visibility:public [final,static] declared in android.animation.Animator' type=kotlin.Unit superQualifierSymbol=android.animation.AnimatorSet origin=EQ
+      value: CALL 'public open fun toLong (): kotlin.Long declared in kotlin.Int' type=kotlin.Long origin=null
+        $this: GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:shortAnimatorDuration type:kotlin.Int visibility:private' type=kotlin.Int origin=null
+          receiver: GET_VAR 'this$0: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+    CALL 'public open fun setInterpolator (p0: @[FlexibleNullability] android.animation.TimeInterpolator?): kotlin.Unit declared in android.animation.AnimatorSet' type=kotlin.Unit origin=EQ
+      $this: GET_VAR '$this$apply: android.animation.AnimatorSet declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.animation.AnimatorSet origin=null
+      p0: CONSTRUCTOR_CALL 'public constructor <init> () declared in android.view.animation.DecelerateInterpolator' type=android.view.animation.DecelerateInterpolator origin=null
+    CALL 'public open fun addListener (p0: @[FlexibleNullability] android.animation.Animator.AnimatorListener?): kotlin.Unit [fake_override] declared in android.animation.AnimatorSet' type=kotlin.Unit origin=null
+      $this: GET_VAR '$this$apply: android.animation.AnimatorSet declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.animation.AnimatorSet origin=null
+      p0: BLOCK type=com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> origin=OBJECT_LITERAL
+        CLASS CLASS name:<no name provided> modality:FINAL visibility:local superTypes:[android.animation.AnimatorListenerAdapter]
+          $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>
+          CONSTRUCTOR visibility:public/*package*/ <> (this$0:com.svape.carpetry.renovar.ui.AboutMe) returnType:com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> [primary]
+            VALUE_PARAMETER BOUND_RECEIVER_PARAMETER name:this$0 index:0 type:com.svape.carpetry.renovar.ui.AboutMe
+            BLOCK_BODY
+              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.svape.carpetry.renovar.ui.AboutMe visibility:public/*package*/ [final] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                receiver: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>' type=com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> origin=null
+                value: GET_VAR 'this$0: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>.<init>' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () declared in android.animation.AnimatorListenerAdapter'
+              BLOCK type=kotlin.Unit origin=null
+          FUN name:onAnimationEnd visibility:public modality:OPEN <> ($this:com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>, animation:android.animation.Animator) returnType:kotlin.Unit
+            overridden:
+              public open fun onAnimationEnd (p0: @[EnhancedNullability] android.animation.Animator): kotlin.Unit declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>
+            VALUE_PARAMETER name:animation index:0 type:android.animation.Animator
+            BLOCK_BODY
+              CALL 'public final fun access$setCurrentAnimator$p ($this: com.svape.carpetry.renovar.ui.AboutMe, <set-?>: android.animation.Animator?): kotlin.Unit declared in com.svape.carpetry.renovar.ui.AboutMe' type=kotlin.Unit origin=null
+                $this: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.svape.carpetry.renovar.ui.AboutMe visibility:public/*package*/ [final] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+                  receiver: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>.onAnimationEnd' type=com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> origin=null
+                <set-?>: CONST Null type=kotlin.Nothing? value=null
+          FUN name:onAnimationCancel visibility:public modality:OPEN <> ($this:com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>, animation:android.animation.Animator) returnType:kotlin.Unit
+            overridden:
+              public open fun onAnimationCancel (p0: @[EnhancedNullability] android.animation.Animator): kotlin.Unit declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>
+            VALUE_PARAMETER name:animation index:0 type:android.animation.Animator
+            BLOCK_BODY
+              CALL 'public final fun access$setCurrentAnimator$p ($this: com.svape.carpetry.renovar.ui.AboutMe, <set-?>: android.animation.Animator?): kotlin.Unit declared in com.svape.carpetry.renovar.ui.AboutMe' type=kotlin.Unit origin=null
+                $this: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.svape.carpetry.renovar.ui.AboutMe visibility:public/*package*/ [final] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+                  receiver: GET_VAR '<this>: com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>.onAnimationCancel' type=com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> origin=null
+                <set-?>: CONST Null type=kotlin.Nothing? value=null
+          FUN FAKE_OVERRIDE name:onAnimationEnd visibility:public modality:OPEN <> ($this:android.animation.Animator.AnimatorListener, p0:@[EnhancedNullability] android.animation.Animator, p1:kotlin.Boolean) returnType:kotlin.Unit [fake_override]
+            overridden:
+              public open fun onAnimationEnd (p0: @[EnhancedNullability] android.animation.Animator, p1: kotlin.Boolean): kotlin.Unit [fake_override] declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:android.animation.Animator.AnimatorListener
+            VALUE_PARAMETER name:p0 index:0 type:@[EnhancedNullability] android.animation.Animator
+              annotations:
+                NonNull
+            VALUE_PARAMETER name:p1 index:1 type:kotlin.Boolean
+          FUN FAKE_OVERRIDE name:onAnimationRepeat visibility:public modality:OPEN <> ($this:android.animation.AnimatorListenerAdapter, p0:@[EnhancedNullability] android.animation.Animator) returnType:kotlin.Unit [fake_override]
+            overridden:
+              public open fun onAnimationRepeat (p0: @[EnhancedNullability] android.animation.Animator): kotlin.Unit declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:android.animation.AnimatorListenerAdapter
+            VALUE_PARAMETER name:p0 index:0 type:@[EnhancedNullability] android.animation.Animator
+          FUN FAKE_OVERRIDE name:onAnimationStart visibility:public modality:OPEN <> ($this:android.animation.AnimatorListenerAdapter, p0:@[EnhancedNullability] android.animation.Animator) returnType:kotlin.Unit [fake_override]
+            overridden:
+              public open fun onAnimationStart (p0: @[EnhancedNullability] android.animation.Animator): kotlin.Unit declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:android.animation.AnimatorListenerAdapter
+            VALUE_PARAMETER name:p0 index:0 type:@[EnhancedNullability] android.animation.Animator
+          FUN FAKE_OVERRIDE name:onAnimationStart visibility:public modality:OPEN <> ($this:android.animation.Animator.AnimatorListener, p0:@[EnhancedNullability] android.animation.Animator, p1:kotlin.Boolean) returnType:kotlin.Unit [fake_override]
+            overridden:
+              public open fun onAnimationStart (p0: @[EnhancedNullability] android.animation.Animator, p1: kotlin.Boolean): kotlin.Unit [fake_override] declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:android.animation.Animator.AnimatorListener
+            VALUE_PARAMETER name:p0 index:0 type:@[EnhancedNullability] android.animation.Animator
+              annotations:
+                NonNull
+            VALUE_PARAMETER name:p1 index:1 type:kotlin.Boolean
+          FUN FAKE_OVERRIDE name:onAnimationPause visibility:public modality:OPEN <> ($this:android.animation.AnimatorListenerAdapter, p0:@[EnhancedNullability] android.animation.Animator) returnType:kotlin.Unit [fake_override]
+            overridden:
+              public open fun onAnimationPause (p0: @[EnhancedNullability] android.animation.Animator): kotlin.Unit declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:android.animation.AnimatorListenerAdapter
+            VALUE_PARAMETER name:p0 index:0 type:@[EnhancedNullability] android.animation.Animator
+          FUN FAKE_OVERRIDE name:onAnimationResume visibility:public modality:OPEN <> ($this:android.animation.AnimatorListenerAdapter, p0:@[EnhancedNullability] android.animation.Animator) returnType:kotlin.Unit [fake_override]
+            overridden:
+              public open fun onAnimationResume (p0: @[EnhancedNullability] android.animation.Animator): kotlin.Unit declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:android.animation.AnimatorListenerAdapter
+            VALUE_PARAMETER name:p0 index:0 type:@[EnhancedNullability] android.animation.Animator
+          FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+            overridden:
+              public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+            VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+          FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+            overridden:
+              public open fun hashCode (): kotlin.Int [fake_override] declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+          FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+            overridden:
+              public open fun toString (): kotlin.String [fake_override] declared in android.animation.AnimatorListenerAdapter
+            $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+          FIELD FIELD_FOR_CAPTURED_VALUE name:this$0 type:com.svape.carpetry.renovar.ui.AboutMe visibility:public/*package*/ [final]
+        BLOCK type=com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> origin=null
+          CONSTRUCTOR_CALL 'public/*package*/ constructor <init> (this$0: com.svape.carpetry.renovar.ui.AboutMe) [primary] declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided>' type=com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5.<no name provided> origin=OBJECT_LITERAL
+            this$0: GET_VAR 'this$0: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+    CALL 'public open fun start (): kotlin.Unit declared in android.animation.AnimatorSet' type=kotlin.Unit origin=null
+      $this: GET_VAR '$this$apply: android.animation.AnimatorSet declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=android.animation.AnimatorSet origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrSourceCompilerForInline.generateLambdaBody(IrSourceCompilerForInline.kt:67)
+	at org.jetbrains.kotlin.codegen.inline.ExpressionLambda.generateLambdaBody(LambdaInfo.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genValueAndPut(IrInlineCodegen.kt:100)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:616)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:644)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:138)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitFieldAccess(ExpressionCodegen.kt:878)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitFieldAccess(ExpressionCodegen.kt:138)
+	at org.jetbrains.kotlin.ir.visitors.IrElementVisitor$DefaultImpls.visitSetField(IrElementVisitor.kt:206)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitSetField(ExpressionCodegen.kt:908)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitSetField(ExpressionCodegen.kt:138)
+	at org.jetbrains.kotlin.ir.expressions.IrSetField.accept(IrSetField.kt:21)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:579)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:584)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:138)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:240)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:123)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:44)
+	... 53 more
+Caused by: java.lang.AssertionError: access of const val: SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:DURATION_INFINITE type:kotlin.Long visibility:public [final,static] declared in android.animation.Animator' type=kotlin.Unit superQualifierSymbol=android.animation.AnimatorSet origin=EQ
+  value: CALL 'public open fun toLong (): kotlin.Long declared in kotlin.Int' type=kotlin.Long origin=null
+    $this: GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:shortAnimatorDuration type:kotlin.Int visibility:private' type=kotlin.Int origin=null
+      receiver: GET_VAR 'this$0: com.svape.carpetry.renovar.ui.AboutMe declared in com.svape.carpetry.renovar.ui.AboutMe.zoomImageFromThumb$lambda$5' type=com.svape.carpetry.renovar.ui.AboutMe origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitFieldAccess(ExpressionCodegen.kt:861)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitFieldAccess(ExpressionCodegen.kt:138)
+	at org.jetbrains.kotlin.ir.visitors.IrElementVisitor$DefaultImpls.visitSetField(IrElementVisitor.kt:206)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitSetField(ExpressionCodegen.kt:908)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitSetField(ExpressionCodegen.kt:138)
+	at org.jetbrains.kotlin.ir.expressions.IrSetField.accept(IrSetField.kt:21)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:579)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:584)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:138)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:240)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:123)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:44)
+	... 73 more
+
+
